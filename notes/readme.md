@@ -63,3 +63,51 @@ http://www.vk2zay.net/article/181
 
 
 ![](/graphics/diagrams/varactor-tuning-vk2zay.jpg)
+
+I tried building designs like this but it's too frustrating. Every time you adjust the coarse, the FSK distance changes. Further, it changes nonlinearly (with bigger swings when the voltage is near zero). Maybe I used a sub-ideal varactor in my tests (a reverse-biased LED).
+
+
+# QRSS Oven Designs
+
+## Links
+
+* [Temperature Control Circuits](http://www.techlib.com/electronics/ovenckts.htm)
+* [Crystal Oven Controller](https://www.w6pql.com/crystal_oven_controller.htm) (W6PQL)
+* [Crystal Ovens for QRSS Applications](https://www.qsl.net/m0ayf/Crystal-Ovens.html) (M0AYF)
+* [A simple crystal oven/heater that uses no power resistors](http://ka7oei.blogspot.com/2018/01/a-simple-crystal-ovenheater-that-uses.html) (KA7OEI)
+* Temperature Controllers for QRSS [Part 1](http://pensacolasnapper.blogspot.com/2011/03/temperature-controllers-for-qrss.html),  [Part 2](http://pensacolasnapper.blogspot.com/2011/03/temperature-controllers-for-qrss-part-2.html), and [Part 3](http://pensacolasnapper.blogspot.com/2011/03/temperature-controllers-for-qrss-part-3.html) (W4HBK)
+* [Use a transistor as a heater](https://www.edn.com/design/components-and-packaging/4371386/Use-a-transistor-as-a-heater)
+
+## Temperature Sensors
+* [NTC thermistor](https://www.mouser.com/ProductDetail/Vishay-BC-Components/NTCS0805E3103JMT?qs=%2Fha2pyFadugG%252BVCtdoH7fOXGwZyTJj3a87dtpnBjw%2FHIFXuReLm0zw%3D%3D) 0805 ($0.53) 10K ambient
+* [LM335](https://www.mouser.com/ProductDetail/STMicroelectronics/LM335Z?qs=sGAEpiMZZMuaKyt%2FjIB%2FpgcqLP%252BGkGYM) ($0.48) output voltage (zener breakdown) varies directly (and linearly) with temperature (10mV/K).
+* [LM84](https://www.mouser.com/ProductDetail/Texas-Instruments/LMT84LP?qs=sGAEpiMZZMvfFCidbTccAx%2Fjajy0Q%252BmrLK0XXJnLE5s%3D) ($0.83) output voltage varies inversely to temperature. 50C is 750 mV.
+
+## Heater Elements
+* [chassis mount wirewound power resistors](https://www.mouser.com/Passive-Components/Resistors/Wirewound-Resistors/Wirewound-Resistors-Chassis-Mount/_/N-7fx9g?Ns=Pricing|0) ($1-2)
+
+## Typical Op-Amp Designs
+
+![](/graphics/diagrams/oven-techlib-baro.gif)
+
+![](/graphics/diagrams/oven-techlib-ovenckts.gif)
+
+![](/graphics/diagrams/oven-LM331-datasheet.PNG)
+
+![](/graphics/diagrams/oven-w6pql-thermistor.gif)
+
+![](/graphics/diagrams/oven-m0ayf-mk1.gif)
+
+![](/graphics/diagrams/oven-m0ayf-mk2.gif)
+
+![](/graphics/diagrams/oven-ka7oei.jpg)
+
+![](/graphics/diagrams/oven-w4hbk.jpg)
+
+![](/graphics/diagrams/oven-w3kkc.PNG)
+
+## Alternate Designs
+
+![](/graphics/diagrams/oven-techlib-tl431.gif)
+
+![](/graphics/diagrams/oven-pa0tab-schematica.jpg)

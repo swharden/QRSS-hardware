@@ -13,6 +13,7 @@ oscillator (colpitts / varactor) | ![](2019-07-13-oscillator.jpg)
 keyer (ATTiny2313) | ![](2019-07-13-keyer.jpg)
 amplifier (IRF510 class C) | ![](2019-07-13-amplifier.jpg)
 spotted in Pensacola, FL (W4HBK) | ![](2019-07-13-W4HBK-pensacolaFlUsa.jpg)
+but temperature drift is pretty lousy | ![](2019-07-14-W4HBK-pensacolaFlUsa-unstable.jpg)
 spotted in Greensboro, NC (WD4ELG) | ![](2019-07-13-WD4ELG-GreensboroNcUsa.jpg)
 
 
