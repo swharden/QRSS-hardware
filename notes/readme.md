@@ -26,7 +26,7 @@
 
 ## Designs at a glance
 
-### Transmitters
+### Transmitters (and oscillators)
 ![](/graphics/diagrams/qrss-tx-G6AVK.png)
 ![](/graphics/diagrams/qrss-tx-IW0HK.jpg)
 ![](/graphics/diagrams/qrss-tx-aa1tj.jpg)
@@ -35,6 +35,7 @@
 ![](/graphics/diagrams/qrss-tx-n0qbh.jpg)
 ![](/graphics/diagrams/qrss-tx-n2cx.PNG)
 ![](/graphics/diagrams/qrss-tx-ng0r.png)
+![](/graphics/diagrams/qrss-oscillator-vk2zay.jpg)
 
 ### Receivers
 ![](/graphics/diagrams/qrss-rx-hans.gif)
@@ -46,6 +47,7 @@ These are notes related to shifting a crystal oscillator's frequency.
 ### [High Frequency VCO Design and Schematics](https://www.qsl.net/va3iul/High_Frequency_VCO_Design_and_Schematics/High_Frequency_VCO_Design_and_Schematics.htm)
 
 ### [Variable Frequency Oscillators](http://ftp.unpad.ac.id/orari/orari-diklat/teknik/homebrew/pcb/crystal-sets-to-sideband/chap10.pdf)
+
 This text has _50 secrets of avoiding drift_ and _varactor tuning_ sections which are worth reviewing.
 
 There's also a good section about building precision power supplies for VFOs.
@@ -55,3 +57,9 @@ There's also a good section about building precision power supplies for VFOs.
 Use a varactor as a temperature-compensated VFO
 
 ![](/graphics/diagrams/oscillator-temperature-compensated.png)
+
+### vk2zay Fine and Coarse Tuning
+http://www.vk2zay.net/article/181
+
+
+![](/graphics/diagrams/varactor-tuning-vk2zay.jpg)
