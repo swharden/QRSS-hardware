@@ -23,6 +23,7 @@ After the above considerations, this is what I came up with. I made it on a brea
 ![](oven-aj4vd-resistor-heater.png)
 
 * You can supply it with dirty power
+* Consider using a multi-turn potentiometer for RV1
 * R6 sets hysteresis
   * Large values promote squishy temperature control. 
   * Small values will faster responses but may oscillate
@@ -30,3 +31,18 @@ After the above considerations, this is what I came up with. I made it on a brea
 * This design could be used as a crystal oven
   * Replace Q1 with a 2N2222 (but the TIP122 works too)
   * Replace R4 with a 680 Ohm 1/4-watt resistor (~17 mA, ~200 mW)
+
+## Chassis Heater: Lazy Version
+**This is a bad idea and you probably shouldn't build this... but I'm going to build it just to see what happens!** The idea sounds crazy: use a voltage regulator shorted to ground as a heating element. It just might work because the LM7805 has current limiting and thermal shutdown built-in, and once temperature stabilizes the Darlington transistor becomes the primary heating element.
+
+![](oven-aj4vd-resistor-heater-lazy.png)
+
+* Only two components are required for the heater
+  * Both are TO-220 and easy to mount to a metal chassis
+  * Both are probably already in your junk box
+* During warm-up the voltage regulator will be shorted to ground. 
+  * Yes, this is probably bad.
+  * ...but the L7805 has a current limiter built in!
+  * during warm-up, the voltage regulator is the primary heating element
+  * ...but the L7805 has thermal shutdown built in!
+* Once stabilized, the transistor is the primary heating element
