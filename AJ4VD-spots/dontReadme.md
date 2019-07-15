@@ -2,6 +2,15 @@
 
 This page serves is a running log of notable QRSS spots. AJ4VD's QRSS signal is transmitted from Gainesville, Florida, USA.
 
+### 2019-07-14
+I improved my amplifier and now output closer to 500mW. I think my new attic dipole (aimed north) is doing a fantastic job! We can add two new locations to the list.
+
+Description | Image
+---|---
+AJ4VD spotted in Northwood, OH (N8NJ) | ![](2019-07-14-N8NJ-NorthwoodOhioUsa.jpg)
+AJ4VD spotted in Las Cruces, NM (WA5DJJ) | ![](2019-07-14-WA5DJJ-LasCruces-NewMexico-USA.jpg)
+AJ4VD spotted in Florida (WD4AH) | ![](2019-07-14-WD4AH-FloridaUsa.jpg)
+AJ4VD spotted in Ontario, Canada | ![](2019-07-14-VA3ROM-OntarioCanada.jpg)
 
 ### 2019-07-13
 
@@ -12,9 +21,9 @@ Description | Image
 oscillator (colpitts / varactor) | ![](2019-07-13-oscillator.jpg)
 keyer (ATTiny2313) | ![](2019-07-13-keyer.jpg)
 amplifier (IRF510 class C) | ![](2019-07-13-amplifier.jpg)
-spotted in Pensacola, FL (W4HBK) | ![](2019-07-13-W4HBK-pensacolaFlUsa.jpg)
-but temperature drift is pretty lousy | ![](2019-07-14-W4HBK-pensacolaFlUsa-unstable.jpg)
-spotted in Greensboro, NC (WD4ELG) | ![](2019-07-13-WD4ELG-GreensboroNcUsa.jpg)
+AJ4VD spotted in Pensacola, FL (W4HBK) | ![](2019-07-13-W4HBK-pensacolaFlUsa.jpg)
+but temperature drift is pretty lousy... better build an oven! | ![](2019-07-14-W4HBK-pensacolaFlUsa-unstable.jpg)
+AJ4VD spotted in Greensboro, NC (WD4ELG) | ![](2019-07-13-WD4ELG-GreensboroNcUsa.jpg)
 
 
 # History of AJ4VD and QRSS
