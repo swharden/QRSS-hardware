@@ -5,7 +5,7 @@ This page serves is a running log of notable QRSS spots. AJ4VD's QRSS signal is 
 
 ### 2019-07-13
 
-This week I strung-up a 30m dipole in the attic and built an oscillator, keyer, and amplifier (they're all separate modules because I intend to tinker with them individually). I finished the amplifier this morning and spotted the signal (the rectangular squiggle) on two grabbers.
+This week I strung-up a 30m dipole in the attic and built an oscillator, keyer, and amplifier (they're all separate modules because I intend to tinker with them individually). I finished the amplifier this morning and spotted the signal (the rectangular squiggle) on two grabbers. I was running 3 PPV into 50 Ohm so I think that's about 22 mW.
 
 Description | Image
 ---|---

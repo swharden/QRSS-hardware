@@ -87,27 +87,16 @@ I tried building designs like this but it's too frustrating. Every time you adju
 * [chassis mount wirewound power resistors](https://www.mouser.com/Passive-Components/Resistors/Wirewound-Resistors/Wirewound-Resistors-Chassis-Mount/_/N-7fx9g?Ns=Pricing|0) ($1-2)
 
 ## Typical Op-Amp Designs
-
 ![](/graphics/diagrams/oven-techlib-baro.gif)
-
 ![](/graphics/diagrams/oven-techlib-ovenckts.gif)
-
 ![](/graphics/diagrams/oven-LM331-datasheet.PNG)
-
 ![](/graphics/diagrams/oven-w6pql-thermistor.gif)
-
 ![](/graphics/diagrams/oven-m0ayf-mk1.gif)
-
 ![](/graphics/diagrams/oven-m0ayf-mk2.gif)
-
 ![](/graphics/diagrams/oven-ka7oei.jpg)
-
 ![](/graphics/diagrams/oven-w4hbk.jpg)
-
 ![](/graphics/diagrams/oven-w3kkc.PNG)
 
 ## Alternate Designs
-
 ![](/graphics/diagrams/oven-techlib-tl431.gif)
-
 ![](/graphics/diagrams/oven-pa0tab-schematica.jpg)
