@@ -19,6 +19,6 @@ Issue 2: varactor diodes are too variable at low voltages. For stable operation 
 
 ![](/graphics/diagrams/varactor-tuning-aj4vd-v1.PNG)
 
-**NOTE TO SELF:** Use a real varicap diode! You have [these](https://uk.rs-online.com/webdocs/0466/0900766b80466490.pdf) and you can get tons of swing by using one! Stop using reverse-biased LEDs!
+***NOTE TO SELF: Use a real varicap diode! You have [these](https://uk.rs-online.com/webdocs/0466/0900766b80466490.pdf) and you can get tons of swing by using one! Stop using reverse-biased LEDs!***
 
 This is a design I came up with that seems to be treating me well so far. Fixed capacitors (optionally populated) set the frequency so the crystal oscillates in the QRSS band. The coarse adjustment moves the signal around the QRSS band (100Hz). The fine adjustment is pulled high (ideal for varactor stability and linearity) through a divider, making it fine. Adjust R4 to control how wide the FSK can be.
