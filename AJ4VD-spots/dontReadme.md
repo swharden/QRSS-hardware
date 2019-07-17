@@ -16,23 +16,6 @@ AJ4VD spotted in Ontario, Canada | ![](2019-07-14-VA3ROM-OntarioCanada.jpg)
 
 This week I strung-up a 30m dipole in the attic and built an oscillator, keyer, and amplifier (they're all separate modules because I intend to tinker with them individually). I finished the amplifier this morning and spotted the signal (the rectangular squiggle) on two grabbers. I was running 3 PPV into 50 Ohm so I think that's about 22 mW.
 
-The code I used to produce the pattern is:
-
-```c
-void squiggleForever()
-{
-	int pwmTop = 200;
-	int pwmBot = 100;
-	for (;;)
-	{
-		for (OCR0A = pwmTop; OCR0A > pwmBot; OCR0A--) _delay_ms(50);
-		waitSec(10);
-		for (OCR0A = pwmBot; OCR0A < pwmTop; OCR0A++) _delay_ms(50);
-		waitSec(10);
-	}
-}
-```
-
 Description | Image
 ---|---
 oscillator (colpitts / varactor) | ![](2019-07-13-oscillator.jpg)
