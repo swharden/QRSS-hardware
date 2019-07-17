@@ -10,55 +10,107 @@ void setupPWM_8bit()
 	OCR0A = 128;						   // set PWM pulse width (duty)
 }
 
-void setupPWM_16bit()
+void waitSec(int seconds)
 {
-	DDRB |= (1 << PB3);		 // 16-bit PWM output on PB3
-	TCCR1A |= (1 << COM1A1); // Clear OC1A/OC1B on Compare Match when upcounting
-	TCCR1B |= (1 << WGM13);  // enable "PWM, phase and frequency correct"
-	TCCR1B |= (1 << CS10);   // enable output, fastest clock (no prescaling)
-	ICR1 = 10000;			 // set the top value (up to 2^16)
-	OCR1A = 0;				 // set PWM pulse width (duty)
-}
-
-void wait(char seconds)
-{
-	while (seconds-- > 0)
+	while (seconds--)
 		_delay_ms(1000);
 }
 
-void squaresForever(){
-	int pwmTop = 200;
-	int pwmBot = 100;
-	for (;;)
+void waitMilliSec(int milliseconds)
+{
+	while (milliseconds--)
+		_delay_ms(1);
+}
+
+int pwmHigh = 200;
+int pwmLow = 100;
+int rampUpSpeed = 50;
+int rampDownSpeed = 2;
+
+void ramp(int target, int speed)
+{
+	if (OCR0A < target)
 	{
-		OCR0A = pwmTop;
-		wait(1);
-		OCR0A = pwmBot;
-		wait(1);
+		while (OCR0A < target)
+		{
+			OCR0A += 1;
+			waitMilliSec(speed);
+		}
+	}
+	else if (OCR0A > target)
+	{
+		while (OCR0A > target)
+		{
+			OCR0A -= 1;
+			waitMilliSec(speed);
+		}
 	}
 }
 
-void trianglesForever(){
-	int pwmTop = 200;
-	int pwmBot = 100;
-	for (;;)
-	{
-		for (OCR0A = pwmTop; OCR0A > pwmBot; OCR0A--)
-		{
-			_delay_ms(50);
-		}
-		wait(10);
-		for (OCR0A = pwmBot; OCR0A < pwmTop; OCR0A++)
-		{
-			_delay_ms(50);
-		}
-		wait(10);
-	}
+void sendDot()
+{
+	ramp(pwmHigh, rampUpSpeed);
+	waitSec(3);
+	ramp(pwmLow, 0);
+}
+
+void sendDash()
+{
+	ramp(pwmHigh, rampUpSpeed);
+	waitSec(6);
+	ramp(pwmLow, 0);
+}
+
+void sendPreLetter()
+{
+	OCR0A = pwmLow;
+	waitSec(3);
+}
+
+void sendCallsign()
+{
+	// A
+	sendPreLetter();
+	sendDot();
+	sendDash();
+	
+	// J
+	sendPreLetter();
+	sendDot();
+	sendDash();
+	sendDash();
+	sendDash();
+	
+	// 4
+	sendPreLetter();
+	sendDot();
+	sendDot();
+	sendDot();
+	sendDot();
+	sendDash();
+	
+	// V
+	sendPreLetter();
+	sendDot();
+	sendDot();
+	sendDot();
+	sendDash();
+	
+	// D
+	sendPreLetter();
+	sendDash();
+	sendDot();
+	sendDot();
 }
 
 int main(void)
 {
 	setupPWM_8bit();
-	//squaresForever();
-	trianglesForever();
+
+	for (;;)
+	{
+		waitSec(10);
+		sendCallsign();
+		waitSec(50);
+	}
 }
