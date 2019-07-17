@@ -25,11 +25,9 @@ void squiggleForever()
 	int pwmBot = 100;
 	for (;;)
 	{
-		for (OCR0A = pwmTop; OCR0A > pwmBot; OCR0A--)
-			_delay_ms(50);
-		wait(10);
-		for (OCR0A = pwmBot; OCR0A < pwmTop; OCR0A++)
-			_delay_ms(50);
+		for (OCR0A = pwmTop; OCR0A > pwmBot; OCR0A--) _delay_ms(50);
+		waitSec(10);
+		for (OCR0A = pwmBot; OCR0A < pwmTop; OCR0A++) _delay_ms(50);
 		waitSec(10);
 	}
 }
