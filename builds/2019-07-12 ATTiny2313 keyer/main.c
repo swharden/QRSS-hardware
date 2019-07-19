@@ -51,14 +51,20 @@ void sendDot()
 {
 	ramp(pwmHigh, rampUpSpeed);
 	waitSec(3);
+	txOFF();
 	ramp(pwmLow, 0);
+	waitSec(3);
+	txON();
 }
 
 void sendDash()
 {
 	ramp(pwmHigh, rampUpSpeed);
 	waitSec(6);
+	txOFF();
 	ramp(pwmLow, 0);
+	waitSec(3);
+	txON();
 }
 
 void sendPreLetter()
@@ -73,14 +79,14 @@ void sendCallsign()
 	sendPreLetter();
 	sendDot();
 	sendDash();
-	
+
 	// J
 	sendPreLetter();
 	sendDot();
 	sendDash();
 	sendDash();
 	sendDash();
-	
+
 	// 4
 	sendPreLetter();
 	sendDot();
@@ -88,14 +94,14 @@ void sendCallsign()
 	sendDot();
 	sendDot();
 	sendDash();
-	
+
 	// V
 	sendPreLetter();
 	sendDot();
 	sendDot();
 	sendDot();
 	sendDash();
-	
+
 	// D
 	sendPreLetter();
 	sendDash();
@@ -103,14 +109,78 @@ void sendCallsign()
 	sendDot();
 }
 
+void testOOK()
+{
+	int repeats = 5;
+	while (repeats--)
+	{
+		txON();
+		waitSec(1);
+		txOFF();
+		waitSec(1);
+	}
+}
+
+void testFSK()
+{
+	int repeats = 5;
+	while (repeats--)
+	{
+		OCR0A = pwmHigh;
+		waitSec(1);
+		OCR0A = pwmLow;
+		waitSec(1);
+	}
+}
+
+void txON()
+{
+	PORTD &= ~(1 << PD5);
+}
+
+void txOFF()
+{
+	PORTD |= (1 << PD5);
+}
+
+void testDitsForever()
+{
+	for (;;)
+	{
+		
+		txON();
+		sendPreLetter();
+		sendDot();
+		txOFF();
+		
+		waitSec(30);
+	}
+}
+
+void sendCallsignForever()
+{
+	for (;;)
+	{
+
+		txOFF();
+		waitSec(20);
+		txON();
+
+		sendCallsign();
+
+		txOFF();
+		waitSec(20);
+		txON();
+	}
+}
+
 int main(void)
 {
 	setupPWM_8bit();
 
-	for (;;)
-	{
-		waitSec(10);
-		sendCallsign();
-		waitSec(50);
-	}
+	testOOK();
+	testFSK();
+
+	testDitsForever();
+	//sendCallsignForever();
 }
