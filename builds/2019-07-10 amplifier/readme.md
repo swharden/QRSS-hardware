@@ -10,6 +10,9 @@ I built a crude amplifier just to get on the air. It outputs about 1W and uses a
 * Inductor values for 50 Ohms impedance at 10.14 MHz
   * 13 turns on a T50-2 is 0.83 uH (52.8 Ohms)
   * 16 turns on a T37-6 is 0.77 uH (48.9 Ohms)
+  
+Could something like this work?
+* [82 uH, 300 mA, 4532 inductor](https://www.mouser.com/ProductDetail/Wurth-Elektronik/7447669182?qs=sGAEpiMZZMsg%252By3WlYCkU9du5C09XLa6DQHwJKVZZ3I%3D)
 
 ### Lowpass filter
 [Chebyshev Pi LC Low Pass Filter Calculator](http://www.calculatoredge.com/electronics/ch%20pi%20low%20pass.htm)
