@@ -26,7 +26,7 @@ void setupUSART()
 
 volatile char receivedBytes[20];
 volatile char receivedByteIndex;
-volatile char lastSeenTensDigit = 'x';
+volatile char lastSeenMinuteDigit = 'x';
 
 ISR(USART_RX_vect) // incoming serial byte
 {
@@ -56,33 +56,18 @@ void processFullBuffer()
 
 	// see if the line starts with "$GPRMC"
 	if ((receivedBytes[0] == '$') && (receivedBytes[5] == 'C'))
-		lastSeenTensDigit = receivedBytes[indexMinutesTens];
+		lastSeenMinuteDigit = receivedBytes[indexMinutesOnes];
 
 	receivedByteIndex = 0; // reset the buffer
-}
-
-void waitForTensDigitToChange()
-{
-
-	while (lastSeenTensDigit == 'x')
-	{
-		// wait until GPS digit arrives
-	}
-
-	char originalTensDigit = lastSeenTensDigit;
-	while (originalTensDigit == lastSeenTensDigit)
-	{
-		// wait until that digit changes
-	}
 }
 
 void waitForNextFiveMinuteMark()
 {
 	for (;;)
 	{
-		if (lastSeenTensDigit == '0')
+		if (lastSeenMinuteDigit == '0')
 			return;
-		if (lastSeenTensDigit == '5')
+		if (lastSeenMinuteDigit == '5')
 			return;
 	}
 }
@@ -210,13 +195,6 @@ void testFSK()
 	}
 }
 
-void testGpsRead()
-{
-	for (;;)
-	{
-	}
-}
-
 void txON()
 {
 	PORTD &= ~(1 << PD5);
@@ -257,8 +235,8 @@ int main(void)
 	setupPWM_8bit();
 	setupUSART();
 
-	testOOK();
 	testFSK();
+	testOOK();
 
 	//testDitsForever();
 	sendCallsignForever();
