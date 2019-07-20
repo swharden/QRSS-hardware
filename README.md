@@ -9,7 +9,7 @@ This repository is a growing collection of notes and resources related to QRSS h
 
 The transmitter I'm working on consists of a few separate modules. Modules are individually powered (with DC barrel jacks, about 12V) and use SMA connectors for inputs/outputs. This design currently has FSK (frequency-shift keying), OOK (on-off keying), and adjustable power output. 
 
-![](/graphics/builds/idea-modules.JPG)
+![](/graphics/builds/idea-modules.jpg)
 
 * **oscillator** - Colpitts, 10.140 MHz crystal, no inductors (so SMT PCB is easy), outputs about 1 mW
 * **oscillator oven** - uses two power 50 Ohm resistors to heat the _entire oscillator enclosure_ to above ambient room temperature. Thermistor is used for temperature sensation. By heating an entire metal-enclosed oscillator module, the entire oscillator circuitry (not just the crystal) becomes thermo-stable.
