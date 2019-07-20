@@ -1,6 +1,6 @@
 # AJ4VD QRSS Spots
 
-This page serves is a running log of recent notable QRSS spots. AJ4VD's QRSS signal is transmitted from Gainesville, Florida, USA. See [/history/](/history/) for a notes regarding AJ4VD's earlier QRSS experiments.
+This page serves is a running log of recent notable QRSS spots. AJ4VD's QRSS signal is transmitted from Gainesville, Florida, USA. 
 
 ### 2019-07-18
 I got OOK and FSK working together (the S shape in the middle). I'm also now using a cude oven, but am not sure yet how stable frequency is over long timespans.
@@ -30,3 +30,6 @@ Description | Image
 ---|---
 AJ4VD spotted in Pensacola, FL (W4HBK) | ![](/spots/2017-07-13/W4HBK-Pensacola-FL-USA.jpg)
 AJ4VD spotted in Greensboro, NC (WD4ELG) | ![](/spots/2017-07-13/WD4ELG-Greensboro-NC-USA.jpg)
+
+### Historical QRSS Experiments
+See [/history/](/history/) for a notes regarding AJ4VD's earlier QRSS experiments.
