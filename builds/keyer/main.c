@@ -72,6 +72,15 @@ void waitForNextFiveMinuteMark()
 	}
 }
 
+void waitForNextTenMinuteMark()
+{
+	for (;;)
+	{
+		if (lastSeenMinuteDigit == '0')
+			return;
+	}
+}
+
 void waitSec(int seconds)
 {
 	while (seconds--)
@@ -109,30 +118,32 @@ void ramp(int target, int speed)
 	}
 }
 
+int dashSeconds = 5;
+
 void sendDot()
 {
 	ramp(pwmHigh, rampUpSpeed);
-	waitSec(3);
+	waitSec(dashSeconds);
 	txOFF();
 	ramp(pwmLow, 0);
-	waitSec(3);
+	waitSec(dashSeconds);
 	txON();
 }
 
 void sendDash()
 {
 	ramp(pwmHigh, rampUpSpeed);
-	waitSec(6);
+	waitSec(dashSeconds * 2);
 	txOFF();
 	ramp(pwmLow, 0);
-	waitSec(3);
+	waitSec(dashSeconds);
 	txON();
 }
 
 void sendPreLetter()
 {
 	OCR0A = pwmLow;
-	waitSec(3);
+	waitSec(dashSeconds);
 }
 
 void sendCallsign()
@@ -223,7 +234,7 @@ void sendCallsignForever()
 {
 	for (;;)
 	{
-		waitForNextFiveMinuteMark();
+		waitForNextTenMinuteMark();
 		txON();
 		sendCallsign();
 		txOFF();
@@ -235,8 +246,8 @@ int main(void)
 	setupPWM_8bit();
 	setupUSART();
 
-	testFSK();
-	testOOK();
+	//testFSK();
+	//testOOK();
 
 	//testDitsForever();
 	sendCallsignForever();
