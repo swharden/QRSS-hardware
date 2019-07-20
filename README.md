@@ -18,6 +18,8 @@ The transmitter I'm working on consists of a few separate modules. Modules are i
 
 
 ![](/graphics/builds/2019-07-19-modules.jpg)
+![](/graphics/builds/2019-07-19-keyer.jpg)
+![](/graphics/builds/2019-07-19-oven.jpg)
 
 
 ### Design Goals
