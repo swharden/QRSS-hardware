@@ -2,6 +2,16 @@
 
 This page serves is a running log of recent notable QRSS spots. AJ4VD's QRSS signal is transmitted from Gainesville, Florida, USA. 
 
+### 2019-07-20
+I finished writing the microcontroller code to read the GPS time and only start transmissions when the second minutes digit is zero. The signal now stacks nicely in 10-minute grabs. Now that GPS and the oven is working well I've started sending my callsign (AJ4VD).
+
+Description | Image
+---|---
+First AJ4VD identifier spotted in Pensacola, FL (W4HBK) as I was actively adjusting the transmission length | ![](/spots/2017-07-20/W4HBK-first-callsign.jpg)
+AJ4VD spotted in Greensboro, NC (WD4ELG) | ![](/spots/2017-07-20/WD4ELG-first-callsign.jpg)
+5x frame stack (mean frame) from the WD4ELG grabber reveals the AJ4VD signal much better, and confirms the GPS timer is working well. | ![](/spots/2017-07-20/WD4ELG-5x-stack.jpg)
+
+
 ### 2019-07-18
 I got OOK and FSK working together (the S shape in the middle). I'm also now using a cude oven, but am not sure yet how stable frequency is over long timespans.
 
