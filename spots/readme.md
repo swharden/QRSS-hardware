@@ -3,6 +3,13 @@
 This page serves is a running log of recent notable QRSS spots. AJ4VD's QRSS signal is transmitted from Gainesville, Florida, USA. 
 
 ### 2019-07-20
+If the transmitter frequency is stable, transmissions start every 10 minutes, and grabbers are time-aligned to be every 10 minutes, multiple grabs can be averaged together to enhance signal-to-noise ratio. This is called _QRSS Image Stacking_. To simplify the process of making these images I created a new program: [QRSS Stitch and Stack](https://github.com/swharden/QRSS-Stich-and-Stack).
+
+As an aside, the average of 13 images displayed in the screenshot looks great!
+
+![](https://github.com/swharden/QRSS-Stich-and-Stack/blob/master/src/QRSS-Stitch-and-Stack/screenshot.jpg)
+
+### 2019-07-20
 I finished writing the microcontroller code to read the GPS time and only start transmissions when the second minutes digit is zero. The signal now stacks nicely in 10-minute grabs. Now that GPS and the oven is working well I've started sending my callsign (AJ4VD).
 
 Description | Image
