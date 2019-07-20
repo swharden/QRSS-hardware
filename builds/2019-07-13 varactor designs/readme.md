@@ -15,7 +15,7 @@ I tried building designs like this I find them very frustrating.
 Issue 1: coarse adjustment modifies FSK shift.
 Every time I adjust the coarse voltage, the FSK distance changes. Consider a coarse adjustment resulting in a small capacitance: the fine FSK can produce a large shift. When the coarse produces a large capacitance, the fine FSK has little effect. If your fine FSK is a perfect 5Hz and you adjust the coarse frequency, your FSK is no longer 5Hz.
 
-Issue 2: varactor diodes are too variable at low voltages. For stable operation it helps to run a varactor at several volts. I fix this by running the FSK voltage through a voltage divider _to VCC_ (not ground), and use the high-pulled fractional voltage on the varactor.
+Issue 2: ~varactor diodes are too variable at low voltages. For stable operation it helps to run a varactor at several volts. I fix this by running the FSK voltage through a voltage divider _to VCC_ (not ground), and use the high-pulled fractional voltage on the varactor.~ Actually this was only a problem for reverse-biased LEDs. Real varactor diodes worked fine at low voltages.
 
 ![](/graphics/diagrams/varactor-tuning-aj4vd-v1.PNG)
 
