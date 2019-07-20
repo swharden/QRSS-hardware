@@ -1,6 +1,10 @@
-#define F_CPU 1000000UL
+#define F_CPU 8000000UL
+#define USART_BAUDRATE 9600
+#define UBRR_VALUE (((F_CPU / (USART_BAUDRATE * 16UL))) - 1)
+
 #include <avr/io.h>
 #include <util/delay.h>
+#include <avr/interrupt.h>
 
 void setupPWM_8bit()
 {
@@ -8,6 +12,79 @@ void setupPWM_8bit()
 	TCCR0A = (1 << COM0A1) | (1 << WGM00); // phase correct PWM mode
 	TCCR0B = (1 << CS00);				   // fastest (no prescaler)
 	OCR0A = 128;						   // set PWM pulse width (duty)
+}
+
+void setupUSART()
+{
+
+	UBRRL = UBRR_VALUE;					  // set baud rate
+	UCSRB |= (1 << RXCIE);				  // RX Complete Interrupt Enable
+	UCSRB |= (1 << RXEN);				  // RX Enable
+	UCSRC |= (1 << UCSZ1) | (1 << UCSZ0); // 8-bit data
+	sei();								  // enable global interrupts
+}
+
+volatile char receivedBytes[20];
+volatile char receivedByteIndex;
+volatile char lastSeenTensDigit = 'x';
+
+ISR(USART_RX_vect) // incoming serial byte
+{
+	char thisChar = UDR;
+
+	if (thisChar == '$')
+		receivedByteIndex = 0;
+
+	if (receivedByteIndex < sizeof(receivedBytes))
+		receivedBytes[receivedByteIndex++] = thisChar;
+	else
+		processFullBuffer();
+}
+
+void processFullBuffer()
+{
+	// look for a message like:
+	//   $GPRMC,184130.00,...
+	// which means time:
+	//   18:41:30.00
+	// and note the digit in the tens place
+
+	uint8_t indexMinutesTens = 9;
+	uint8_t indexMinutesOnes = 10;
+	uint8_t indexSecondsTens = 11;
+	uint8_t indexSecondsOnes = 12;
+
+	// see if the line starts with "$GPRMC"
+	if ((receivedBytes[0] == '$') && (receivedBytes[5] == 'C'))
+		lastSeenTensDigit = receivedBytes[indexMinutesTens];
+
+	receivedByteIndex = 0; // reset the buffer
+}
+
+void waitForTensDigitToChange()
+{
+
+	while (lastSeenTensDigit == 'x')
+	{
+		// wait until GPS digit arrives
+	}
+
+	char originalTensDigit = lastSeenTensDigit;
+	while (originalTensDigit == lastSeenTensDigit)
+	{
+		// wait until that digit changes
+	}
+}
+
+void waitForNextFiveMinuteMark()
+{
+	for (;;)
+	{
+		if (lastSeenTensDigit == '0')
+			return;
+		if (lastSeenTensDigit == '5')
+			return;
+	}
 }
 
 void waitSec(int seconds)
@@ -133,6 +210,13 @@ void testFSK()
 	}
 }
 
+void testGpsRead()
+{
+	for (;;)
+	{
+	}
+}
+
 void txON()
 {
 	PORTD &= ~(1 << PD5);
@@ -147,12 +231,12 @@ void testDitsForever()
 {
 	for (;;)
 	{
-		
+
 		txON();
 		sendPreLetter();
 		sendDot();
 		txOFF();
-		
+
 		waitSec(30);
 	}
 }
@@ -161,26 +245,21 @@ void sendCallsignForever()
 {
 	for (;;)
 	{
-
-		txOFF();
-		waitSec(20);
+		waitForNextFiveMinuteMark();
 		txON();
-
 		sendCallsign();
-
 		txOFF();
-		waitSec(20);
-		txON();
 	}
 }
 
 int main(void)
 {
 	setupPWM_8bit();
+	setupUSART();
 
 	testOOK();
 	testFSK();
 
-	testDitsForever();
-	//sendCallsignForever();
+	//testDitsForever();
+	sendCallsignForever();
 }
