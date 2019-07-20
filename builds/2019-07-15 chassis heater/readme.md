@@ -35,6 +35,8 @@ After the above considerations, this is what I came up with. I made it on a brea
 ## Chassis Heater: Lazy Version
 **This is a bad idea and you probably shouldn't build this... but I'm going to build it just to see what happens!** The idea sounds crazy: use a voltage regulator shorted to ground as a heating element. It just might work because the LM7805 has current limiting and thermal shutdown built-in, and once temperature stabilizes the Darlington transistor becomes the primary heating element.
 
+***Update: I built this and it seemed to actually work. As expected the regulator did most of the heating. I'm not going to pursue this as a final design because I don't know long long the regulator can be stressed like that before failing.***
+
 ![](oven-aj4vd-resistor-heater-lazy.png)
 
 * Only two components are required for the heater
