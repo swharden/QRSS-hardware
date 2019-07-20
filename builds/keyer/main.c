@@ -118,7 +118,7 @@ void ramp(int target, int speed)
 	}
 }
 
-int dashSeconds = 5;
+int dashSeconds = 9;
 
 void sendDot()
 {
@@ -248,6 +248,8 @@ int main(void)
 
 	//testFSK();
 	//testOOK();
+	
+	txOFF();
 
 	//testDitsForever();
 	sendCallsignForever();
