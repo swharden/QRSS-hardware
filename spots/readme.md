@@ -14,9 +14,9 @@ I finished writing the microcontroller code to read the GPS time and only start 
 
 Description | Image
 ---|---
-First AJ4VD identifier spotted in Pensacola, FL (W4HBK) as I was actively adjusting the transmission length | ![](/spots/2017-07-20/W4HBK-first-callsign.jpg)
-AJ4VD spotted in Greensboro, NC (WD4ELG) | ![](/spots/2017-07-20/WD4ELG-first-callsign.jpg)
-5x frame stack (mean frame) from the WD4ELG grabber reveals the AJ4VD signal much better, and confirms the GPS timer is working well. | ![](/spots/2017-07-20/WD4ELG-5x-stack.jpg)
+First AJ4VD identifier spotted in Pensacola, FL (W4HBK) as I was actively adjusting the transmission length | ![](/spots/2019-07-20/W4HBK-first-callsign.jpg)
+AJ4VD spotted in Greensboro, NC (WD4ELG) | ![](/spots/2019-07-20/WD4ELG-first-callsign.jpg)
+5x frame stack (mean frame) from the WD4ELG grabber reveals the AJ4VD signal much better, and confirms the GPS timer is working well. | ![](/spots/2019-07-20/WD4ELG-5x-stack.jpg)
 
 
 ### 2019-07-18: OOK and FSK both work now
@@ -24,8 +24,8 @@ I got OOK and FSK working together (the S shape in the middle). I'm also now usi
 
 Description | Image
 ---|---
-AJ4VD spotted in Pensacola, FL (W4HBK) | ![](/spots/2017-07-18/W4HBK-OOK.jpg)
-AJ4VD spotted in Greensboro, NC (WD4ELG) | ![](/spots/2017-07-19/WD4ELG-Greensboro-NC-OOK.jpg)
+AJ4VD spotted in Pensacola, FL (W4HBK) | ![](/spots/2019-07-18/W4HBK-OOK.jpg)
+AJ4VD spotted in Greensboro, NC (WD4ELG) | ![](/spots/2019-07-19/WD4ELG-Greensboro-NC-OOK.jpg)
 
 ### 2019-07-14: amplifier improvements
 
@@ -33,11 +33,11 @@ I improved my amplifier (now output 500mW) and am impressed how well my attic di
 
 Description | Image
 ---|---
-AJ4VD spotted in Northwood, OH (N8NJ) | ![](/spots/2017-07-14/N8NJ-Northwood-OH-USA.jpg)
-AJ4VD spotted in Las Cruces, NM (WA5DJJ) | ![](/spots/2017-07-14/WA5DJJ-LasCruces-NM-USA.jpg)
-AJ4VD spotted in Florida (WD4AH) with a nice airplane reflection in the middle | ![](/spots/2017-07-14/WD4AH-FL-USA.jpg)
-AJ4VD spotted in Ontario, Canada | ![](/spots/2017-07-14/VA3ROM-Ontario-Canada.jpg)
-AJ4VD spotted in Pensacola, FL (W4HBK) but this 8-hour grab reveals when my AC kicks on and off and demonstrates the necessity of ovenizing my setup. It's the signal around 10,139,980 Hz. | ![](/spots/2017-07-14/W4HBK-Pensacola-FL-USA-unstable.jpg)
+AJ4VD spotted in Northwood, OH (N8NJ) | ![](/spots/2019-07-14/N8NJ-Northwood-OH-USA.jpg)
+AJ4VD spotted in Las Cruces, NM (WA5DJJ) | ![](/spots/2019-07-14/WA5DJJ-LasCruces-NM-USA.jpg)
+AJ4VD spotted in Florida (WD4AH) with a nice airplane reflection in the middle | ![](/spots/2019-07-14/WD4AH-FL-USA.jpg)
+AJ4VD spotted in Ontario, Canada | ![](/spots/2019-07-14/VA3ROM-Ontario-Canada.jpg)
+AJ4VD spotted in Pensacola, FL (W4HBK) but this 8-hour grab reveals when my AC kicks on and off and demonstrates the necessity of ovenizing my setup. It's the signal around 10,139,980 Hz. | ![](/spots/2019-07-14/W4HBK-Pensacola-FL-USA-unstable.jpg)
 
 ### 2019-07-13: first QRSS transmissions (in a few years)
 
@@ -45,8 +45,8 @@ This week I strung-up a 30m dipole in the attic and built an oscillator, keyer, 
 
 Description | Image
 ---|---
-AJ4VD spotted in Pensacola, FL (W4HBK) | ![](/spots/2017-07-13/W4HBK-Pensacola-FL-USA.jpg)
-AJ4VD spotted in Greensboro, NC (WD4ELG) | ![](/spots/2017-07-13/WD4ELG-Greensboro-NC-USA.jpg)
+AJ4VD spotted in Pensacola, FL (W4HBK) | ![](/spots/2019-07-13/W4HBK-Pensacola-FL-USA.jpg)
+AJ4VD spotted in Greensboro, NC (WD4ELG) | ![](/spots/2019-07-13/WD4ELG-Greensboro-NC-USA.jpg)
 
 ### Historical QRSS Experiments
 See [/history/](/history/) for a notes regarding AJ4VD's earlier QRSS experiments.
