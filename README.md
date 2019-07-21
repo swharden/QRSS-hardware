@@ -3,12 +3,7 @@
 This repository is an evolving collection of notes and resources related to QRSS hardware (TX and RX) that I (Scott Harden, AJ4VD) find useful. Eventually this work will become a webpage, but for now it's a GitHub repository which makes it easy to edit.
 
 * **[Recently spotted AJ4VD QRSS signals](/spots)**
-* Hardware notes
-  * [keyer](/builds/keyer)
-  * [oscillator](/builds/oscillator)
-  * [oven](/builds/oven)
-  * [amplifier](/builds/amplifier)
-  * [tuner](/builds/tuner)
+* Hardware notes are in the [builds](/builds) folder 
 * New to QRSS?
   * [What is QRSS?](https://www.qsl.net/m0ayf/What-is-QRSS.html)
   * Join the [_QRSS Knights_ mailing list](https://groups.io/g/qrssknights)
