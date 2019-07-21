@@ -1,0 +1,266 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:VCC #PWR01
+U 1 1 5D3542EF
+P 3050 2600
+F 0 "#PWR01" H 3050 2450 50  0001 C CNN
+F 1 "VCC" H 3067 2773 50  0000 C CNN
+F 2 "" H 3050 2600 50  0001 C CNN
+F 3 "" H 3050 2600 50  0001 C CNN
+	1    3050 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5D3545D6
+P 3050 2850
+F 0 "R1" H 3120 2896 50  0000 L CNN
+F 1 "1k" H 3120 2805 50  0000 L CNN
+F 2 "" V 2980 2850 50  0001 C CNN
+F 3 "~" H 3050 2850 50  0001 C CNN
+	1    3050 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 2700 3050 2600
+$Comp
+L Device:D_Zener D1
+U 1 1 5D354D41
+P 3050 3350
+F 0 "D1" V 3004 3429 50  0000 L CNN
+F 1 "10V" V 3095 3429 50  0000 L CNN
+F 2 "" H 3050 3350 50  0001 C CNN
+F 3 "~" H 3050 3350 50  0001 C CNN
+	1    3050 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5D355930
+P 3050 3600
+F 0 "#PWR03" H 3050 3350 50  0001 C CNN
+F 1 "GND" H 3055 3427 50  0000 C CNN
+F 2 "" H 3050 3600 50  0001 C CNN
+F 3 "" H 3050 3600 50  0001 C CNN
+	1    3050 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3600 3050 3500
+$Comp
+L Device:C C1
+U 1 1 5D355FB7
+P 2800 3100
+F 0 "C1" V 2548 3100 50  0000 C CNN
+F 1 ".1u" V 2639 3100 50  0000 C CNN
+F 2 "" H 2838 2950 50  0001 C CNN
+F 3 "~" H 2800 3100 50  0001 C CNN
+	1    2800 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5D3566D8
+P 2550 3200
+F 0 "#PWR02" H 2550 2950 50  0001 C CNN
+F 1 "GND" H 2555 3027 50  0000 C CNN
+F 2 "" H 2550 3200 50  0001 C CNN
+F 3 "" H 2550 3200 50  0001 C CNN
+	1    2550 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3000 3050 3100
+Wire Wire Line
+	2950 3100 3050 3100
+Connection ~ 3050 3100
+Wire Wire Line
+	3050 3100 3050 3200
+Wire Wire Line
+	2650 3100 2550 3100
+Wire Wire Line
+	2550 3100 2550 3200
+$Comp
+L Device:R_POT RV1
+U 1 1 5D357965
+P 3750 3350
+F 0 "RV1" H 3681 3396 50  0000 R CNN
+F 1 "CENTER" H 3681 3305 50  0000 R CNN
+F 2 "" H 3750 3350 50  0001 C CNN
+F 3 "~" H 3750 3350 50  0001 C CNN
+	1    3750 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3200 3750 3100
+Wire Wire Line
+	3750 3100 3050 3100
+$Comp
+L power:GND #PWR04
+U 1 1 5D3582D1
+P 3750 3600
+F 0 "#PWR04" H 3750 3350 50  0001 C CNN
+F 1 "GND" H 3755 3427 50  0000 C CNN
+F 2 "" H 3750 3600 50  0001 C CNN
+F 3 "" H 3750 3600 50  0001 C CNN
+	1    3750 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3600 3750 3500
+$Comp
+L Amplifier_Operational:LM324A U1
+U 1 1 5D359682
+P 4900 3250
+F 0 "U1" H 5050 3100 50  0000 C CNN
+F 1 "LM324A" H 4850 3250 50  0000 C CNN
+F 2 "" H 4850 3350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 4950 3450 50  0001 C CNN
+	1    4900 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3350 3900 3350
+Wire Wire Line
+	4600 3150 4500 3150
+Wire Wire Line
+	4500 3150 4500 2950
+Wire Wire Line
+	4500 2950 5300 2950
+Wire Wire Line
+	5300 2950 5300 3250
+Wire Wire Line
+	5300 3250 5200 3250
+$Comp
+L Device:R R2
+U 1 1 5D35DB21
+P 5300 3500
+F 0 "R2" H 5230 3454 50  0000 R CNN
+F 1 "1k" H 5230 3545 50  0000 R CNN
+F 2 "" V 5230 3500 50  0001 C CNN
+F 3 "~" H 5300 3500 50  0001 C CNN
+	1    5300 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J1
+U 1 1 5D35E623
+P 5900 3750
+F 0 "J1" H 6000 3725 50  0000 L CNN
+F 1 "Vout" H 6000 3634 50  0000 L CNN
+F 2 "" H 5900 3750 50  0001 C CNN
+F 3 " ~" H 5900 3750 50  0001 C CNN
+	1    5900 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5D35F201
+P 5300 4000
+F 0 "R3" H 5230 3954 50  0000 R CNN
+F 1 "10k" H 5230 4045 50  0000 R CNN
+F 2 "" V 5230 4000 50  0001 C CNN
+F 3 "~" H 5300 4000 50  0001 C CNN
+	1    5300 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_POT RV2
+U 1 1 5D35F7B0
+P 3750 4650
+F 0 "RV2" H 3681 4696 50  0000 R CNN
+F 1 "WIDTH" H 3681 4605 50  0000 R CNN
+F 2 "" H 3750 4650 50  0001 C CNN
+F 3 "~" H 3750 4650 50  0001 C CNN
+	1    3750 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5D35FB98
+P 3750 4900
+F 0 "#PWR06" H 3750 4650 50  0001 C CNN
+F 1 "GND" H 3755 4727 50  0000 C CNN
+F 2 "" H 3750 4900 50  0001 C CNN
+F 3 "" H 3750 4900 50  0001 C CNN
+	1    3750 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4900 3750 4800
+Wire Wire Line
+	3750 4500 3750 4400
+Wire Wire Line
+	3750 4400 3650 4400
+Text GLabel 3650 4400 0    50   Input ~ 0
+FSK
+Wire Wire Line
+	3900 4650 4600 4650
+$Comp
+L Amplifier_Operational:LM324A U1
+U 2 1 5D361E11
+P 4900 4550
+F 0 "U1" H 5050 4400 50  0000 C CNN
+F 1 "LM324A" H 4850 4550 50  0000 C CNN
+F 2 "" H 4850 4650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 4950 4750 50  0001 C CNN
+	2    4900 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4550 5300 4550
+Wire Wire Line
+	4500 4450 4600 4450
+Wire Wire Line
+	5300 3250 5300 3350
+Connection ~ 5300 3250
+Wire Wire Line
+	5300 3650 5300 3750
+Connection ~ 5300 3750
+Wire Wire Line
+	5300 3750 5300 3850
+Wire Wire Line
+	4500 4250 4500 4450
+Wire Wire Line
+	5300 4550 5300 4250
+Wire Wire Line
+	5300 4250 4500 4250
+Wire Wire Line
+	5300 4150 5300 4250
+Connection ~ 5300 4250
+$Comp
+L power:GND #PWR05
+U 1 1 5D36AC86
+P 5900 4050
+F 0 "#PWR05" H 5900 3800 50  0001 C CNN
+F 1 "GND" H 5905 3877 50  0000 C CNN
+F 2 "" H 5900 4050 50  0001 C CNN
+F 3 "" H 5900 4050 50  0001 C CNN
+	1    5900 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 4050 5900 3950
+Wire Wire Line
+	5300 3750 5700 3750
+Text Notes 3850 3500 0    50   ~ 0
+set center frequency
+Text Notes 3850 4800 0    50   ~ 0
+set FSK width
+Text Notes 3300 4300 0    50   ~ 0
+input is 0-5V
+$EndSCHEMATC
