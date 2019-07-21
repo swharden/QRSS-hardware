@@ -2,13 +2,17 @@
 
 This repository is an evolving collection of notes and resources related to QRSS hardware (TX and RX) that I (Scott Harden, AJ4VD) find useful. Eventually this work will become a webpage, but for now it's a GitHub repository which makes it easy to edit.
 
-The **[Recent AJ4VD QRSS spots](/spots)** section pairs hardware notes with QRSS grabs, and serves as a way for people to look up what transmitter is currently being used if they see the signal on the air and are curious about its origin.
-
-Those new to QRSS may benefit from the following resources:
-
-* [What is QRSS?](https://www.qsl.net/m0ayf/What-is-QRSS.html)
-* Join the [_QRSS Knights_ mailing list](https://groups.io/g/qrssknights)
-* See signals in real time with [QRSS Plus](http://www.swharden.com/qrss/plus/)
+* **[Recently spotted AJ4VD QRSS signals](/spots)**
+* Hardware notes
+  * [keyer](/builds/keyer)
+  * [oscillator](/builds/oscillator)
+  * [oven](/builds/oven)
+  * [amplifier](/builds/amplifier)
+  * [tuner](/builds/tuner)
+* New to QRSS?
+  * [What is QRSS?](https://www.qsl.net/m0ayf/What-is-QRSS.html)
+  * Join the [_QRSS Knights_ mailing list](https://groups.io/g/qrssknights)
+  * See live signals around the world with [QRSS Plus](http://www.swharden.com/qrss/plus/)
 
 ### Modular QRSS Transmitter for Experimentation
 
