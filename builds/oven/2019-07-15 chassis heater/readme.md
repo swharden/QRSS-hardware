@@ -17,6 +17,8 @@ After the above considerations, this is what I came up with. I made it on a brea
 
 * You can add multiple R4s in parallel for faster heating
 * I ended-up replacing the TIP122 (Darlington transistor) with an IRF510 (N-channel MOSEFET) for better linear operation (since the TIP122 has such high gain)
+  * This works great and the IRF510 rests partially on once stabalized
+  * The IRF510 gets hot! Maybe you can mount that to the chassis too?
 * You can supply it with dirty power and it doesn't seem to affect oscillator performance
 * I use a multi-turn potentiometer for RV1
 * R6 sets hysteresis
