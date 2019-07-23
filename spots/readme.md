@@ -10,7 +10,7 @@ As an aside, the average of 13 images displayed in the screenshot looks great!
 ![](/spots/2019-07-20/qrss-stitch-and-stack-screenshot.jpg)
 
 ### 2019-07-20: started transmitting letters
-I finished writing the microcontroller code to read the GPS time and only start transmissions when the second minutes digit is zero. The signal now stacks nicely in 10-minute grabs. Now that GPS and the oven is working well I've started sending my callsign (AJ4VD).
+I finished writing the microcontroller code to read the GPS time and only start transmissions when the minutes value ends with a zero. The signal now stacks nicely in 10-minute grabs. Now that GPS and the oven is working well I've started sending my callsign (AJ4VD).
 
 Description | Image
 ---|---
