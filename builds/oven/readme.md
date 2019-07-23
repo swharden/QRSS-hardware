@@ -8,3 +8,6 @@ Some DIY QRSS ovens use resistors as the heater element and package the heater a
 
 ### Eventually I want a SMT PCB heater
 When I get an oscillator I like using SMT parts, I'll try adding the temperature sensor and heater directly on the board. This is ideal for small PCBs. It would be cool if the board could thermo-regulate itself, then the oscillator would just need insulation, and the heater would require very low power.
+
+### Chassis Heater Design
+* see [chassis heater designs ane experiments](2019-07-15%20chassis%20heater) 
