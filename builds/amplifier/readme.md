@@ -2,7 +2,7 @@
 
 ## Quick and dirty amplifier
 
-I built a crude amplifier just to get on the air. It outputs about 1W and uses an IRF510 final stage (class C). It's bad. I won't even show the schematic.
+I built a crude amplifier just to get on the air. It outputs about 1W and uses an IRF510 final stage (class C). It's bad. I won't even show the schematic. I'll design this formally and post design/schematics here
 
 ### Class C Notes
 
