@@ -1,0 +1,21 @@
+Circuit: * C:\Users\scott\Documents\GitHub\QRSS-hardware\builds\amplifier\LTspice\Draft2.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Mon Jul 22 23:27:07 2019
+Total elapsed time: 1.133 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 570275
+traniter = 570260
+tranpoints = 147746
+accept = 100311
+rejected = 47435
+matrix size = 22
+fillins = 5
+solver = Normal
+Matrix Compiler1: 1.10 KB object code size  0.3/0.2/[0.1]
+Matrix Compiler2: 1.69 KB object code size  0.2/0.3/[0.1]
+
