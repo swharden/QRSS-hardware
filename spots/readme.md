@@ -1,6 +1,13 @@
-# AJ4VD QRSS Spots
+# AJ4VD QRSS Spots & Build Log
 
 This page serves is a running log of recent notable QRSS spots. AJ4VD's QRSS signal is transmitted from Gainesville, Florida, USA. 
+
+### 2019-07-26: New SMT PCB oscillator
+
+I swapped-out my Manhattan-style oscillator with a SMT design I'm testing. I was excited to put the SMT connector on there, but in hindsight I should have laid it out sideways because I couldn't close the lid =P
+
+![](/builds/oscillator/photos/2019-07-26-b.JPG)
+![](/builds/oscillator/photos/2019-07-26-d.JPG)
 
 ### 2019-07-20: new image stacking software
 If the transmitter frequency is stable, transmissions start every 10 minutes, and grabbers are time-aligned to be every 10 minutes, multiple grabs can be averaged together to enhance signal-to-noise ratio. This is called _QRSS Image Stacking_. To simplify the process of making these images I created a new program: [QRSS Stitch and Stack](https://github.com/swharden/QRSS-Stich-and-Stack).

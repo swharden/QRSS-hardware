@@ -31,3 +31,17 @@ Issue 2: ~varactor diodes are too variable at low voltages. For stable operation
 ***NOTE TO SELF: Use a real varicap diode! You have [BB132](https://uk.rs-online.com/webdocs/0466/0900766b80466490.pdf) (around 60 pF) and [BB149A](http://pdf.datasheetcatalog.com/datasheet/NXP_Semiconductors/BB149A.pdf) (around 20 pF) so you can get tons of swing by using one! Stop using reverse-biased LEDs!*** A reverse-biasd blue LED measured 60 Hz swing (with a lot of additional fixed capacitance in place to get near center frequency). Replacing this with a BB132 (I had to remove a 5pA cap to compensate) I got a swing of 159 Hz. That's more than double, and that's just one varicap. You can stack them in parallel. **Real varicaps dont mind low voltage*** I found out, so don't worry about avoiding that super low region like with the LED.
 
 This is a design I came up with that seems to be treating me well so far. Fixed capacitors (optionally populated) set the frequency so the crystal oscillates in the QRSS band. The coarse adjustment moves the signal around the QRSS band (100Hz). The fine adjustment is pulled high through a divider. Adjust R4 to control how wide the FSK can be.
+
+## Rev 1 Build
+
+* I used BB132 for the varicap
+* I used 33P for C6
+* For C9 I used 33p (should be NP0)
+* For C11 I used 100p
+* For C10 and C12 I used NP0 120p caps
+
+![](photos/2019-07-26-a.JPG)
+![](photos/2019-07-26-b.JPG)
+![](photos/2019-07-26-c.JPG)
+![](photos/2019-07-26-d.JPG)
+![](photos/2019-07-26-e.JPG)

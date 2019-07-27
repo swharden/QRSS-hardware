@@ -29,10 +29,12 @@ Modules are all individually powered and use SMA connectors for inputs/outputs. 
 
 This is a work in progress so the enclosures (if they even exist) are pretty crude. Additional photographs (and schematics) at various stages of the design process can be found in sub-folders of this repository. As individual modules are improved, these photographs will be updated.
 
-![](/graphics/builds/2019-07-19-modules.jpg)
+![](/builds/oscillator/photos/2019-07-26-b.JPG)
+![](/builds/oscillator/photos/2019-07-26-c.JPG)
+![](/builds/oscillator/photos/2019-07-26-d.JPG)
+![](/builds/oscillator/photos/2019-07-26-e.JPG)
 ![](/graphics/builds/2019-07-19-keyer.jpg)
-![](/graphics/builds/2019-07-19-oven.jpg)
-![](/graphics/builds/2019-07-13-oscillator.jpg)
+![](/graphics/builds/2019-07-19-modules.jpg)
 
 
 ### Project goals
