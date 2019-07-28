@@ -1,13 +1,8 @@
-* This PCB is large with components spaced-out to make it easy to test different component values
-* I also arranged the PCB to look like the schematic
-* I ordered this PCB for testing on 2019-07-11
-* After I'm happy with the design I will add a temperature controller (PCB heater) to see how much stability I can achieve this way
+# QRSS Oscillator
 
-![](pcb-3d.PNG)
-![](pcb-design.PNG)
-![](schematic.png)
+This page documents development of a voltage-controlled oscillator suitable for QRSS. The oscillator project is developed in concert with the oven project.
 
-# Varactor FSK Designs for QRSS
+## Varactor FSK Designs for QRSS
 
 For QRSS it's convenient to have 2 frequency shift adjustments: a coarse one to set frequency (~200 Hz), and a fine one for FSK (5 Hz). 
 
@@ -32,7 +27,14 @@ Issue 2: ~varactor diodes are too variable at low voltages. For stable operation
 
 This is a design I came up with that seems to be treating me well so far. Fixed capacitors (optionally populated) set the frequency so the crystal oscillates in the QRSS band. The coarse adjustment moves the signal around the QRSS band (100Hz). The fine adjustment is pulled high through a divider. Adjust R4 to control how wide the FSK can be.
 
-## Rev 1 Build
+## QRSS Oscillator Revision 1.1
+
+### Design
+![](rev1.1/pcb-3d.PNG)
+![](rev1.1/pcb-design.PNG)
+![](rev1.1/schematic.png)
+
+### Build Notes
 
 * I used BB132 for the varicap
 * I used 33P for C6
@@ -45,3 +47,16 @@ This is a design I came up with that seems to be treating me well so far. Fixed 
 ![](photos/2019-07-26-c.JPG)
 ![](photos/2019-07-26-d.JPG)
 ![](photos/2019-07-26-e.JPG)
+
+## QRSS Oscillator Revision 1.2
+
+This version has the oven built into the PCB.
+The oven controller is still external.
+Not sure how many resistors need to actually be populated for the oven.
+
+### Design
+
+![](rev1.2/schematic.png)
+![](rev1.2/pcb-design.png)
+![](rev1.2/pcb-front.png)
+![](rev1.2/pcb-back.png)
