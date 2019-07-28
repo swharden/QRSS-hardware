@@ -53,6 +53,7 @@ This is a design I came up with that seems to be treating me well so far. Fixed 
 This version has the oven built into the PCB.
 The oven controller is still external.
 Not sure how many resistors need to actually be populated for the oven.
+I ordered this PCB on 2019-07-28.
 
 ### Design
 
