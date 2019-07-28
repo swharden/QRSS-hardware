@@ -59,3 +59,7 @@ Pr = Vcc * I
 // peak power through the NPN is 1/4 that through the resistor
 Pnpn = Vcc * I / 4
 ```
+
+* If I drop 12V through a 330 Ohm resistor it passes 36.4 mA of current and dissipates 436.4 mW of power. This means the transistor will dissipate 109 mW of power at its max. 
+  * A 2n7000 can handle this.
+  * A [0.5W 0805 300 Ohm resistor](https://www.mouser.com/ProductDetail/Panasonic/ERJ-P06J331V?qs=sGAEpiMZZMu61qfTUdNhG4N%252BbAgO2H57MCL338q%2F2SU%3D) can handle this.
