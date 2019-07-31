@@ -2,6 +2,11 @@
 
 This page serves is a running log of recent notable QRSS spots. AJ4VD's QRSS signal is transmitted from Gainesville, Florida, USA. 
 
+### 2019-07-30: First Spot Across the Atlantic
+It's pretty weak, but you can just make out the unique shape on EA8BVP's grabber in the Canary Islands (4,000 miles away).
+
+![](/spots/2019-07-30/EA8BVP1.1907302050.jpg)
+
 ### 2019-07-29: Spotted in Canada
 
 I was really strong on VE1VDM's grabber last night, but I found it interesting to see such a strong signal in the middle of the day (11AM).
