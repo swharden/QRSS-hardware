@@ -61,6 +61,10 @@ Description | Image
 AJ4VD spotted in Pensacola, FL (W4HBK) | ![](/spots/2019-07-18/W4HBK-OOK.jpg)
 AJ4VD spotted in Greensboro, NC (WD4ELG) | ![](/spots/2019-07-19/WD4ELG-Greensboro-NC-OOK.jpg)
 
+I kept thinking my oscillator was drifting frequency because the line wasn't straight. Turns out it was my curved monitors =P
+
+![](/graphics/photos/2019-07-19-curved-monitors.jpg)
+
 ### 2019-07-14: amplifier improvements
 
 I improved my amplifier (now output 500mW) and am impressed how well my attic dipole is doing! It runs east/west so it radiates north/south. I saw my signal on a few more grabbers.
