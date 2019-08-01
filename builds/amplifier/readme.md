@@ -1,6 +1,6 @@
 # QRSS Amplifier
 
-I built a crude amplifier just to get on the air. It outputs about 1W and uses an IRF510 final stage (class C). It also accepts an on-off-keying (OOK). When high the output is disabled.
+I built a crude amplifier just to get on the air. It outputs about 1W and uses an IRF510 final stage (class C). It also accepts an on-off-keying (OOK) signal (amplifier output is disabled when this line is high).
 
 If the output inductor were wound as a transformer, this circuit could handle much more power output.
 
