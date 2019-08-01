@@ -38,3 +38,6 @@ The second potentiometer (RV2) sets the width of the FSK input. I adjust this to
 The output is buffered, mixed, and sent to the oscillator module with coax.
 
 ![](fsk-circuit/fsk-circuit.JPG)
+
+### Photos
+![](photos/2019-07-31.jpg)
