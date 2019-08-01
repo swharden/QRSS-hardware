@@ -1,8 +1,10 @@
 # QRSS Amplifier
 
-## Quick and dirty amplifier
+I built a crude amplifier just to get on the air. It outputs about 1W and uses an IRF510 final stage (class C). It also accepts an on-off-keying (OOK). When high the output is disabled.
 
-I built a crude amplifier just to get on the air. It outputs about 1W and uses an IRF510 final stage (class C). It's bad. I won't even show the schematic. I'll design this formally and post design/schematics here
+If the output inductor were wound as a transformer, this circuit could handle much more power output.
+
+![](pictures/2019-07-31-new-amp.jpg)
 
 ### Class C Notes
 
@@ -16,6 +18,19 @@ I built a crude amplifier just to get on the air. It outputs about 1W and uses a
 
 ### Lowpass filter
 
-* quick and dirty 3-pole LPF according to the [Chebyshev Calculator](http://www.calculatoredge.com/electronics/ch%20pi%20low%20pass.htm)
-  * C1 and C2 = 200 pF
-  * L1 = 761 nH (16t on T37-6)
+#### Quick and dirty 3-pole
+
+According to the [Chebyshev Calculator](http://www.calculatoredge.com/electronics/ch%20pi%20low%20pass.htm): 
+
+* C1 and C2 = 200 pF
+* L1 = 761 nH (16t on T37-6)
+
+#### QRP Labs 5-pole
+I had one of [these](https://www.qrp-labs.com/images/lpfkit/assembly_A4.pdf) around so I made an in-line filter module for 30m.
+
+* L2 = 20t on T37-6 (1.26 uH)
+* L1 and L3 = 19t on T37-6 (1.09 uH)
+* C1 and C4 = 270
+* C2 and C3 = 560
+
+![](pictures/2019-07-31-newLPF.jpg)

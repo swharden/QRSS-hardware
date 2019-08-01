@@ -35,6 +35,8 @@ This is a work in progress so the enclosures (if they even exist) are pretty cru
 ![](/builds/oscillator/photos/2019-07-26-e.JPG)
 ![](/graphics/builds/2019-07-19-keyer.jpg)
 ![](/graphics/builds/2019-07-19-modules.jpg)
+![](/builds/amplifier/pictures/2019-07-31-new-amp.jpg)
+![](/builds/amplifier/pictures/2019-07-31-newLPF.jpg)
 
 
 ### Project goals

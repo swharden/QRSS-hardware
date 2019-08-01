@@ -2,6 +2,19 @@
 
 This page serves is a running log of recent notable QRSS spots. AJ4VD's QRSS signal is transmitted from Gainesville, Florida, USA. 
 
+### 2019-07-31: Upgraded Amplifier
+The design is similar (CMOS buffer driving an IRF510) but I used perfboard to make this one and placed it in an enclosure. There's no low-pass filter on the amplifier itself, but I put a 30m low-pass filter in-line the coax before the antenna. It's currently outputting 20PPV into 50 ohms (1 watt).
+
+old amplifier | new amplifier
+---|---
+![](/builds/amplifier/pictures/2019-07-30-old-amp.jpg) | ![](/builds/amplifier/pictures/2019-07-31-new-amp.jpg)
+
+Right after hooking it up I saw my signal looking nice on the air:
+
+Ontario, Canada (VA3ROM) | Canary Islands (EA8BVP1)
+---|---
+![](2019-07-31/VA3ROM.1907311950.549006f9e5.jpg)|![](2019-07-31/EA8BVP1.1907311940.821b800321.jpg)
+
 ### 2019-07-30: First Spot Across the Atlantic
 It's pretty weak, but you can just make out the unique shape on EA8BVP's grabber in the Canary Islands (4,000 miles away).
 
