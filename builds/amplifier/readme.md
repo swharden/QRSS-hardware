@@ -5,6 +5,7 @@ I built a crude amplifier just to get on the air. It outputs about 1W and uses a
 If the output inductor were wound as a transformer, this circuit could handle much more power output.
 
 ![](pictures/2019-07-31-new-amp.jpg)
+![](PCB/schematic.png)
 
 ### Class C Notes
 
