@@ -24,10 +24,9 @@ It's pretty weak, but you can just make out the unique shape on EA8BVP's grabber
 
 I was really strong on VE1VDM's grabber last night, but I found it interesting to see such a strong signal in the middle of the day (11AM).
 
-Description | Image
+Nova Scotia, Canada (VE1VDM) | Stack (average of 13 grabs)
 ---|---
-Latest grab from Nova Scotia, Canada (VE1VDM) | ![](2019-07-29/VE1VDM.1907290830.35415d51dc.jpg)
-Stack of 13 grabs | ![](2019-07-29/VE1VDM.1907290940.jpg)
+![](2019-07-29/VE1VDM.1907290830.35415d51dc.jpg) | ![](2019-07-29/VE1VDM.1907290940.jpg)
 
 ### 2019-07-26: New SMT PCB oscillator
 
