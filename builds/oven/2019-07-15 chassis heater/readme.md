@@ -28,3 +28,7 @@ After the above considerations, this is what I came up with. I made it on a brea
 * I suspect this design could be used as a _crystal_ oven
   * Replace Q1 with a 2N2222
   * Replace R4 with a 680 Ohm 1/4-watt resistor (~17 mA, ~200 mW)
+  
+  ### Photos
+  ![](/builds/oscillator/photos/2019-07-26-d.JPG)
+  ![](/builds/oscillator/photos/2019-07-26-e.JPG)
