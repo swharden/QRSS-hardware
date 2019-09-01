@@ -32,3 +32,11 @@ After the above considerations, this is what I came up with. I made it on a brea
   ### Photos
   ![](/builds/oscillator/photos/2019-07-26-d.JPG)
   ![](/builds/oscillator/photos/2019-07-26-e.JPG)
+  
+  ### More Notes
+  I experimented more on 2019-08-31:
+  
+  * Switched to an LM335 (not a thermistor) super-glued to the chassis
+  * I target 3.10 mV (310 Kelvin = 37C or 100F)
+  * Can use LM7805 for op-amp and divider since we are using low voltages
+  * A tip122 is cheaper than the IRF510 and works fine
