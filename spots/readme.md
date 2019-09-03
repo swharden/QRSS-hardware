@@ -2,6 +2,11 @@
 
 This page serves is a running log of recent notable QRSS spots. AJ4VD's QRSS signal is transmitted from Gainesville, Florida, USA. 
 
+### 2019-09-02: Spotted in Switzerland
+[Bill (W4HBK)](https://www.qsl.net/w4hbk/) emailed the [Knights](https://groups.io/g/qrssknights) a grab of my signal from a KIWI SDR captured at HB9EHO in Ittigen, Switzerland.
+
+![](2019-09-02/HB9EHO.jpg)
+
 ### 2019-08-03: Spotted in Sweden
 This hint of my transmitter was captured by SA6BSS in Slutarp, Sweden at 12:30AM last night.
 
